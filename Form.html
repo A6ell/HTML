@@ -8,7 +8,7 @@
 </head>
 <body style="background-color: rgb(215, 223, 250);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
 
-
+<div><!---Type-->
     <h2>Sage Training User Registration</h2>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -22,16 +22,18 @@
     <label for="phone">Enter your phone:</label>
     <input type="tel" id="phone" name="phone" placeholder="Phone" required>
     <br>
+</div>
 
-
+<div><!---Radio Button-->
     <label>Gender:</label>
     <input type="radio" id="male" name="gender" value="male" required>
     <label for="male">Male</label>
     <input type="radio" id="female" name="gender" value="female" required>
     <label for="female">Female</label>
     <br>
+</div>
 
-
+<div><!---Checkbox-->
     <lable>Choose your favorite web languages:</lable>
 <input type="checkbox" id="html" name="favorite-languages[]" value="html">
 <label for="html">HTML</label>
@@ -40,8 +42,9 @@
 <input type="checkbox" id="javascript" name="favorite-languages[]" value="javascript">
 <label for="javascript">JavaScript</label>
 <br>
+</div>
 
-
+<div><!---Options-->
 <label for="favorite-language">what is your favorite topic?</label>
 <select id="favorite-language" name="favorite-language">
   <option value="">--Front end development--</option>
@@ -50,11 +53,14 @@
   <option value="javascript">JavaScript</option>
 </select>
 <br>
+</div>
 
-
+<div><!--Feedback-->
     <label for="comment">Write your feedback:</label>
+    <br>
     <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+    <br>
     <input type="submit" value="Submit">
-  </form>
+</div>
 </body>
 </html>
