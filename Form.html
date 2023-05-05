@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(215, 223, 250);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+
+
+    <h2>Sage Training User Registration</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+    <br>
+    <label for="phone">Enter your phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+    <br>
+
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label>
+    <br>
+
+
+    <lable>Choose your favorite web languages:</lable>
+<input type="checkbox" id="html" name="favorite-languages[]" value="html">
+<label for="html">HTML</label>
+<input type="checkbox" id="css" name="favorite-languages[]" value="css">
+<label for="css">CSS</label>
+<input type="checkbox" id="javascript" name="favorite-languages[]" value="javascript">
+<label for="javascript">JavaScript</label>
+<br>
+
+
+<label for="favorite-language">what is your favorite topic?</label>
+<select id="favorite-language" name="favorite-language">
+  <option value="">--Front end development--</option>
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="javascript">JavaScript</option>
+</select>
+<br>
+
+
+    <label for="comment">Write your feedback:</label>
+    <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
