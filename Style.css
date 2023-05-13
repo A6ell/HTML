@@ -34,6 +34,32 @@ p {
   font-weight: bold;
   color: rgb(199, 199, 199);
 }
+/* Styles for large screens */
+
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar-links a {
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+}
+
 
 nav {
     background-color:  rgb(32, 109, 30);
@@ -58,9 +84,8 @@ nav a:hover {
     background-color: #3f3f3f;
     color: #fff;
 }
-.accordion.accordion-3 {
-  border-radius: 3px;
-}
+
+
 
 div {
     margin: 20px;
@@ -148,9 +173,7 @@ section {
 } */
 @media (300px<=width<=780px)
 {
-    body {
-        background-color: #727272;
-    }
+   
 
 }
 
