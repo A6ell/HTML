@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Style.css">
     <title>Document</title>
 </head>
@@ -12,70 +14,59 @@
         <h1>Full Stack Web Development</h1>
            </header>
            <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="list.html">Lists</a>
-            <a href="View.html">Table</a>
-            <a href="Form.html">Registration</a>
+            <a class= href="index.html">Home</a>
+            <a class= href="about.html">About</a>
+            <a class= href="list.html">Lists</a>
+            <a class= href="View.html">Table</a>
+            <a class= href="Form.html">Registration</a>
+            <a class= href="calculator.html">Calculator</a>
        </nav>
-       <div class="form_box">
+    </div>
+       <div class="container">
        <form>
-<div><!---Type-->
+        <div class="mb-3">
     <h2>Sage Training User Registration</h2>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <label for="name" class="form-label">Name:</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
     <br>
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+    <label for="email" class="form-label">Email:</label>
+    <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email" required>
     <br>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+    <label for="password" class="form-label">Password:</label>
+    <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
     <br>
-    <label for="phone">Enter your phone:</label>
-    <input type="tel" id="phone" name="phone" placeholder="Phone" required>
-    <br>
+    <label for="phone" class="form-label">Enter your phone:</label>
+    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
 </div>
-
-<div><!---Radio Button-->
+<div class="mb-3">
     <label>Gender:</label>
     <label for="male">Male</label>
-    <input type="radio" id="male" name="gender" value="male" required>
+    <input type="radio" class="form-check-input" id="male" name="gender" value="male" required>
     <label for="female">Female</label>
-    <input type="radio" id="female" name="gender" value="female" required>
+    <input type="radio" class="form-check-input" id="female" name="gender" value="female" required>
     <br>
-</div>
-
-<div><!---Checkbox-->
+  </div>
+  <div class="mb-3">
     <lable>Choose your favorite web languages:</lable>
-    <br>
     <label for="html">HTML</label>
-<input type="checkbox" id="html" name="favorite-languages[]" value="html">
+<input type="checkbox" class="form-check-input" id="html" name="favorite-languages[]" value="html">
 <label for="css">CSS</label>
-<input type="checkbox" id="css" name="favorite-languages[]" value="css">
+<input type="checkbox" class="form-check-input" id="css" name="favorite-languages[]" value="css">
 <label for="javascript">JavaScript</label>
-<input type="checkbox" id="javascript" name="favorite-languages[]" value="javascript">
-
-<br>
+<input type="checkbox" class="form-check-input" id="javascript" name="favorite-languages[]" value="javascript">
 </div>
-
-<div><!---Options-->
-<label for="favorite-language">what is your favorite topic?</label>
-<select id="favorite-language" name="favorite-language">
+<div class="mb-3">
+<label for="favorite-language" >what is your favorite topic?</label>
+<select class="form-control" id="favorite-language" name="favorite-language">
   <option value="">--Front end development--</option>
   <option value="html">HTML</option>
   <option value="css">CSS</option>
   <option value="javascript">JavaScript</option>
 </select>
-<br>
 </div>
-
-<div><!--Feedback-->
     <label for="comment">Write your feedback:</label>
-    <br>
-    <textarea id="comment" name="comment" rows="5" cols="50"></textarea>
-    <br>
-    <input type="submit" value="Submit">
-</div>
+    <textarea class="form-control" id="comment" name="comment" rows="5" cols="50"></textarea>
+    <input type="submit" class="btn btn-primary" value="Submit">
 </form>
 </div>
 </body>

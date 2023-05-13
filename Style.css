@@ -58,11 +58,24 @@ nav a:hover {
     background-color: #3f3f3f;
     color: #fff;
 }
+.accordion.accordion-3 {
+  border-radius: 3px;
+}
 
 div {
     margin: 20px;
 }
-form {
+nav ul
+{
+    list-style: none;
+
+}
+.list
+{
+    display: inline;
+
+}
+/* form {
     position: relative;
     border-radius: 15px;
     padding: 10px;
@@ -75,12 +88,12 @@ form {
     background-color: #353539;
     box-shadow: 2px 2px 4px #292828;
     overflow: auto;
-  }
+  } */
 
-label {
+/* label {
     display: flex;
     margin-bottom: 10px;
-}
+} */
 .image {
     margin: 0 auto;
     border-radius: 10px;
@@ -91,7 +104,7 @@ label {
 
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="password"],
 input[type="tel"],
 select,
@@ -132,8 +145,22 @@ section {
     align-content: center;
     width: 75%;
     padding: 25px;
+} */
+@media (300px<=width<=780px)
+{
+    body {
+        background-color: #727272;
+    }
+
 }
-table {
+
+.table
+{
+    border: 1px solid black;
+    background-color: white;
+}
+    
+/* table {
     margin: 0 auto;
     border-radius: 15px;
     padding: 10px;
@@ -142,14 +169,14 @@ table {
     width: 75%;
     margin: 0 auto;
     margin-top: 20px;
-    background-color: #353539;
+    background-color: #ebebeb;
     box-shadow: 2px 2px 4px #292828;
 }
     th, td {
         padding: 25px;
         text-align: center;
         color: #b7b7b7;
-    }
+    } */
 .grid{
     background-color: #353535;
     max-width: fit-content;
@@ -169,7 +196,7 @@ button{
     background-color: #353539;
     color: #fff;
     border: 2px solid #838383;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 5px;
     min-height: 50px;
     box-shadow: 0 8px 15px -7px black;
@@ -187,7 +214,7 @@ button:hover{
     grid-column: span 4;
   }
   button:nth-of-type(1) {
-    background-color: rgb(96, 96, 95);
+    background-color: rgb(255, 255, 255);
     color: white;
   }
 button:nth-of-type(2) {
