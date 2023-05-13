@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    background-color: #575757;
+    background-color: #4b4b4b;
     color: #e4e3e3;
     
 }
@@ -57,8 +57,6 @@ nav a:hover {
     
     background-color: #3f3f3f;
     color: #fff;
-    /* transform: scale(1.2);
-    color: #fff; */
 }
 
 div {
@@ -70,12 +68,13 @@ form {
     padding: 10px;
     border: 3px solid rgb(32, 109, 30);
     max-width: fit-content;
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 20px;
     color: #b7b7b7;
     background-color: #353539;
     box-shadow: 2px 2px 4px #292828;
+    overflow: auto;
   }
 
 label {
@@ -152,17 +151,28 @@ table {
         color: #b7b7b7;
     }
 .grid{
+    background-color: #353535;
+    max-width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    border: 3px solid rgb(110, 110, 110);
+    padding: 5px;
+    box-sizing: border-box; /* added */
+    grid-template-columns: repeat(4, 75px);
+    /* grid-template-rows: repeat(5, 75px); */
+
 }
 button{
+  font-size: 25px;
+  height: 70px;
     background-color: #353539;
     color: #fff;
-    border: 2px solid #202220;
-    border-radius: 5px;
+    border: 2px solid #838383;
+    border-radius: 20px;
     margin: 5px;
     min-height: 50px;
-    box-shadow: 0 8px 50px -7px black;
+    box-shadow: 0 8px 15px -7px black;
     background: #3A4655;
 }
 button:hover{
@@ -170,18 +180,74 @@ button:hover{
   color: white;
   transition-duration: 0.4s;
 }
-
-.wraper{
-    width:500px;
-    display:flex;
-    flex-wrap:wrap;
+.large-button {
+    grid-column: span 2;
+  }
+  .Display {
+    grid-column: span 4;
+  }
+  button:nth-of-type(1) {
+    background-color: rgb(96, 96, 95);
+    color: white;
+  }
+button:nth-of-type(2) {
+  background-color: rgb(24, 164, 59);
+  color: white;
 }
-.wraper > div{
-    flex:1 1 120px;
+button:nth-of-type(3) {
+  background-color: rgb(46, 80, 180);
+  color: white;
 }
-.calc_container
-{
-    
+button:nth-of-type(4) {
+    background-color: rgb(46, 80, 180);
+    color: white;
+  }
+button:nth-of-type(5) {
+  background-color: rgb(46, 80, 180);
+  color: white;
 }
+button:nth-of-type(9) {
+    background-color: rgb(46, 80, 180);
+    color: white;
+  }
+  button:nth-of-type(13) {
+    background-color: rgb(46, 80, 180);
+    color: white;
+  }
+  button:nth-of-type(17) {
+    background-color: rgb(46, 80, 180);
+    color: white;
+  }
+  button:nth-of-type(20) {
+    background-color: rgb(40, 59, 94);
+    color: white;
+  }
+  
+  button:nth-of-type(2):hover {
+    background-color: rgb(176, 60, 10);
+  }
+  button:nth-of-type(3):hover {
+    background-color: rgb(223, 134, 0);
+  }
+  button:nth-of-type(4):hover {
+    background-color: rgb(223, 134, 0);
+  }
+  button:nth-of-type(5):hover {
+    background-color: rgb(223, 134, 0);
+  }
+  button:nth-of-type(9):hover {
+    background-color: rgb(223, 134, 0);
+  }
+  button:nth-of-type(13):hover {
+    background-color: rgb(223, 134, 0);
+  }
+  button:nth-of-type(17):hover {
+    background-color: rgb(223, 134, 0);
+  }
+  button:nth-of-type(20):hover {
+    background-color: rgb(223, 134, 0);
+  }
+  
+  
 
   
