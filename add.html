@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        function myDemo(){
+        document.getElementById ("demo").innerHTML="this is my first js"
+        }
+    </script> -->
+</head>
+<body>
+    
+    <input type="number" id="num1" name="number" placeholder="Enter number">
+    <button style="background-color: rgb(225, 235, 233); color: rgb(226, 9, 143);" onclick="myfunc()">
+        +
+    </button>
+    <input type="number"class="form-control" id="num2" name="number" placeholder="Enter number" required>
+    <p id="res">
+    </p>
+<script>
+    function myfunc(){
+        let num1=parseInt(document.getElementById("num1").value);
+        let num2=parseInt(document.getElementById("num2").value);
+        let result=num1+num2;
+        
+            document.getElementById("res").innerHTML=result;
+        }
+        
+    </script>
+    <script src="my_script.js"></script>
+</body>
+</html>
