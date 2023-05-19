@@ -10,39 +10,65 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="header">
-        <h1>Full Stack Web Development</h1>
-           </header>
-           <nav>
-            <a  href="index.html">Home</a>
-            <a  href="about.html">About</a>
-            <a  href="list.html">Lists</a>
-            <a  href="View.html">Table</a>
-            <a  href="Form.html">Registration</a>
-            <a  href="calculator.html">Calculator</a>
-       </nav>
+  <header class="header">
+    <h1>Full Stack Web Development</h1>
+       </header>
+       <nav class="navbar navbar-expand-lg navbar-light nav">
+        <div class="navbar-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="list.html">Lists</a>
+          <a href="View.html">Table</a>
+          <a href="Form.html">Registration</a>
+          <a href="calculator.html">Calculator</a>
+          <a href="portfolio.html">Portfolio</a>
+        </div>
+        </button>
+      </nav>
+      
+      <nav class="navbar navbar-expand-lg navbar-light nav">
+        <button class="navbar-toggler custom-toggler" type="button" id="myButton" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="offcanvas offcanvas-start" data-bs-backdrop="true" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <div>
+      <button type="button" id="myButton" class="navbar-toggler btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      <div>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="list.html">Lists</a></li>
+      <li><a href="View.html">Table</a></li>
+      <li><a href="Form.html">Registration</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </nav>     
        <div class="form_box">
         <div class="grid">
-            <button class="Display" type="text" id="Display"></button>
-            <button>AC</button>
-            <button>%</button>
-            <button>~></button>
-            <button>/</button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button>*</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>-</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>+</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="large-button">=</button>
+            <button class="Display calc-button" type="text" id="Display"></button>
+            <button class="calc-button">AC</button>
+            <button class="calc-button">%</button>
+            <button class="calc-button">~></button>
+            <button class="calc-button">/</button>
+            <button class="calc-button">7</button>
+            <button class="calc-button">8</button>
+            <button class="calc-button">9</button>
+            <button class="calc-button">*</button>
+            <button class="calc-button">4</button>
+            <button class="calc-button">5</button>
+            <button class="calc-button">6</button>
+            <button class="calc-button">-</button>
+            <button class="calc-button">1</button>
+            <button class="calc-button">2</button>
+            <button class="calc-button">3</button>
+            <button class="calc-button">+</button>
+            <button class="calc-button">0</button>
+            <button class="calc-button">.</button>
+            <button class="calc-button large-button">=</button>
         </div>
         
 </div>  
