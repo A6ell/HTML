@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+        function promisesSimplified(){
+            return new promise((resolve, reject) =>{
+                let a = 2+2;
+                if (a == 4){
+                    resolve("success")
+                }
+                else{
+                    reject("failed")
+                }
+            });
+        }
+        promisesSimplified().then((message) => {
+            console.log("this is the then "+ message)
+        }).catch((message)=>{
+            console.log("this is in the catch " + message)
+        });
+</script>
+</html>
