@@ -110,6 +110,7 @@ button:nth-of-type(20) {
 }
 
 body {
+  padding-top: 100px;
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -203,7 +204,12 @@ display: none;
 
 
 nav {
+<<<<<<< HEAD
   background-color:  rgba(27, 27, 27, 0.288);
+=======
+  
+  background-color:  rgb(27, 27, 27);
+>>>>>>> 421a42af1064630cf794a5ba37ca7cb52203b18d
   display: inline-flex;
   justify-content: left;
   padding: 10px;
@@ -211,7 +217,17 @@ nav {
 }
 .nav {
   
+<<<<<<< HEAD
+=======
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  
+>>>>>>> 421a42af1064630cf794a5ba37ca7cb52203b18d
 padding: 1px;
+min-height: 10px;
 
 }
 
@@ -252,11 +268,6 @@ nav ul
   border: 2px solid rgb(63, 54, 100);
   max-width: fit-content;
   box-shadow: 2px 2px 4px #000000;
-
-}
-@media (300px<=width<=780px)
-{
- 
 
 }
 
